@@ -2,6 +2,8 @@
  * Public API Surface of tssforms
  */
 
-export * from './lib/tssforms.service';
-export * from './lib/tssforms.component';
-export * from './lib/tssforms.module';
+export * from './tss-form/tss-form.component';
+export * from './tss-form/tss-form.module';
+
+export * from './formly-ui-bootstrap/ui-bootstrap';
+
