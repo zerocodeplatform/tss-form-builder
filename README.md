@@ -1,15 +1,17 @@
-Use "npm i tss-forms" to install the forms.
-After installing import the below modules.
+## Use "npm i tss-forms" to install the forms.
 
-#For tss-forms
+## After installing import the below modules.
+
+### For tss-forms
+
 import { TssFormModule } from './tss-form.module';
 
-#For tss-multi-step-form
+### For tss-multi-step-form
+
 import { TssMultiStepFormModule } from './tss-multi-step-form.module';
 
-Use this selector in html:#
-
-  <tss-form></tss-form>
+## Use this selector in html:
+  ` <tss-form></tss-form> `
 
 # FormsDemo
 
