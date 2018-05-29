@@ -3,22 +3,17 @@ import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { FormlyFieldConfig, FormlyFormOptions } from '@ngx-formly/core';
 import { Router } from '@angular/router';
-import { TodoListPublicService } from '../services/todo-list-public.service';
-import { TodoListService, Todo } from '../services/todo-list.service';
-import { TodoListPrivateService } from '../services/todo-list-private.service';
+import { FormProperties } from '../utils/FormProperties';
 
 @Component({
   selector: 'tss-form',
   templateUrl: './tss-form.component.html',
   styleUrls: ['./tss-form.component.scss'],
-  providers: [
-    { provide: TodoListService, useClass: TodoListPrivateService }
-  ]
 })
 
 export class TssFormComponent implements OnInit {
 
-  @Input() options: any;
+  @Input() options: FormProperties;
   form = new FormGroup({});
   model: any = {};
   optionsState: FormlyFormOptions = {
@@ -91,9 +86,9 @@ export class TssFormComponent implements OnInit {
     }
   ];
 
-  todos: Todo[];
+  // formProp: FormProperties[];
 
-  constructor(private todoListService: TodoListService) { }
+  constructor() { }
 
   /**
    * Here the page will load and display the content in it first.
@@ -101,8 +96,8 @@ export class TssFormComponent implements OnInit {
    * @memberof TssFormComponent
    */
   ngOnInit() {
-    // this.fields = this.options.fields;
-    this.todos = this.todoListService.getFormsProperties();
+    this.fields = this.options.feilds;
+    // this.formProp = this.FormService.getFormsProperties();
   }
 
 /**
