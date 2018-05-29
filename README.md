@@ -1,3 +1,16 @@
+Use "npm i tss-forms" to install the forms.
+After installing import the below modules.
+
+#For tss-forms
+import { TssFormModule } from './tss-form.module';
+
+#For tss-multi-step-form
+import { TssMultiStepFormModule } from './tss-multi-step-form.module';
+
+Use this selector in html:#
+
+  <tss-form></tss-form>
+
 # FormsDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
