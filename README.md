@@ -4,11 +4,11 @@
 
 ### For tss-forms
 
-import { TssFormModule } from './tss-form.module';
+`import { TssFormModule } from './tss-form.module';`
 
 ### For tss-multi-step-form
 
-import { TssMultiStepFormModule } from './tss-multi-step-form.module';
+`import { TssMultiStepFormModule } from './tss-multi-step-form.module';`
 
 ## Use this selector in html:
   ` <tss-form></tss-form> `
